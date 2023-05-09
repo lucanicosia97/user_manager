@@ -17,7 +17,7 @@ namespace user_manager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ciao");
+            MessageBox.Show("Hallo");
         }
     }
 }

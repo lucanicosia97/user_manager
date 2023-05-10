@@ -1,6 +1,6 @@
 ﻿namespace user_manager
 {
-    partial class Form1
+    partial class addUser
     {
         /// <summary>
         ///  Required designer variable.
@@ -131,7 +131,7 @@
             txtAbteilung.Size = new Size(192, 23);
             txtAbteilung.TabIndex = 9;
             // 
-            // Form1
+            // addUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -146,9 +146,8 @@
             Controls.Add(lblNachname);
             Controls.Add(txtVorname);
             Controls.Add(lblVorname);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Name = "addUser";
+            Text = "User Erstellen";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -10,34 +10,57 @@ namespace user_manager
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hallo");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void lblVorname_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void txtVorname_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void lblNachname_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void txtjobtitel_TextChanged(object sender, EventArgs e)
+        private void txtNachname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+         /*
+            set Display Name: "Vorname Nachname" 
+            set User Logon Name: "vorname.nachname"
+            set User logon name pre WIN 2000: "vorname.nachname"
+            set Domain: "@simplon.com"
+            set Password: "Initial01"
+            set E-mail: "vorname.nachname@simplon.com"
+            
+         */
+        private void lblJobtitel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblStraﬂe_Click(object sender, EventArgs e)
+        private void txtJobtitel_TextChanged(object sender, EventArgs e)
+        {
+        /*    
+            set Job titel
+            set Description
+        */
+        }
+
+        private void lblAbteilung_Click(object sender, EventArgs e)
         {
 
         }
-    }
-}
+
+        private void txtAbteilung_TextChanged(object sender, EventArgs e)
+        {
+        /*   
+            set Company: SIMPLON Fahrrad GmbH
+            set Department based on Manager
+            combobox for Departments?
+        */
+        }

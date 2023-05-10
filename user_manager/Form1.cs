@@ -39,5 +39,10 @@ namespace user_manager
         {
 
         }
+
+        private void lblStraﬂe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

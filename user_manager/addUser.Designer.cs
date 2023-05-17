@@ -35,7 +35,10 @@
             lblJobtitel = new Label();
             txtJobtitel = new TextBox();
             lblAbteilung = new Label();
-            txtAbteilung = new TextBox();
+            lblStraße = new Label();
+            cboStraße = new ComboBox();
+            cboAbteilung = new ComboBox();
+            btnOK = new Button();
             SuspendLayout();
             // 
             // lblVorname
@@ -46,7 +49,6 @@
             lblVorname.Size = new Size(54, 15);
             lblVorname.TabIndex = 0;
             lblVorname.Text = "Vorname";
-            lblVorname.Click += lblVorname_Click;
             // 
             // txtVorname
             // 
@@ -64,7 +66,6 @@
             lblNachname.Size = new Size(65, 15);
             lblNachname.TabIndex = 2;
             lblNachname.Text = "Nachname";
-            lblNachname.Click += lblNachname_Click;
             // 
             // txtNachname
             // 
@@ -82,7 +83,6 @@
             lblJobtitel.Size = new Size(45, 15);
             lblJobtitel.TabIndex = 4;
             lblJobtitel.Text = "Jobtitel";
-            lblJobtitel.Click += lblJobtitel_Click;
             // 
             // txtJobtitel
             // 
@@ -100,22 +100,57 @@
             lblAbteilung.Size = new Size(59, 15);
             lblAbteilung.TabIndex = 6;
             lblAbteilung.Text = "Abteilung";
-            lblAbteilung.Click += lblAbteilung_Click;
             // 
-            // txtAbteilung
+            // lblStraße
             // 
-            txtAbteilung.Location = new Point(25, 189);
-            txtAbteilung.Name = "txtAbteilung";
-            txtAbteilung.Size = new Size(159, 23);
-            txtAbteilung.TabIndex = 7;
-            txtAbteilung.TextChanged += txtAbteilung_TextChanged;
+            lblStraße.AutoSize = true;
+            lblStraße.Location = new Point(25, 225);
+            lblStraße.Name = "lblStraße";
+            lblStraße.Size = new Size(40, 15);
+            lblStraße.TabIndex = 8;
+            lblStraße.Text = "Straße";
+            // 
+            // cboStraße
+            // 
+            cboStraße.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboStraße.FormattingEnabled = true;
+            cboStraße.Items.AddRange(new object[] { "Oberer Achdamm 22", "Schäfferhofstraße 15" });
+            cboStraße.Location = new Point(25, 243);
+            cboStraße.Name = "cboStraße";
+            cboStraße.Size = new Size(159, 23);
+            cboStraße.TabIndex = 9;
+            cboStraße.SelectedIndexChanged += cboStraße_SelectedIndexChanged;
+            // 
+            // cboAbteilung
+            // 
+            cboAbteilung.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboAbteilung.FormattingEnabled = true;
+            cboAbteilung.Items.AddRange(new object[] { "Außendienst", "Buchhaltung", "Digitale Innovation und IT", "Entwicklung", "HR", "IPC", "IT" });
+            cboAbteilung.Location = new Point(25, 189);
+            cboAbteilung.Name = "cboAbteilung";
+            cboAbteilung.Size = new Size(159, 23);
+            cboAbteilung.TabIndex = 10;
+            cboAbteilung.SelectedIndexChanged += cboAbteilung_SelectedIndexChanged;
+            // 
+            // btnOK
+            // 
+            btnOK.Location = new Point(139, 318);
+            btnOK.Name = "btnOK";
+            btnOK.Size = new Size(233, 43);
+            btnOK.TabIndex = 11;
+            btnOK.Text = "User Erstellen";
+            btnOK.UseVisualStyleBackColor = true;
+            btnOK.Click += btnOK_Click;
             // 
             // addUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(txtAbteilung);
+            ClientSize = new Size(510, 398);
+            Controls.Add(btnOK);
+            Controls.Add(cboAbteilung);
+            Controls.Add(cboStraße);
+            Controls.Add(lblStraße);
             Controls.Add(lblAbteilung);
             Controls.Add(txtJobtitel);
             Controls.Add(lblJobtitel);
@@ -123,6 +158,9 @@
             Controls.Add(lblNachname);
             Controls.Add(txtVorname);
             Controls.Add(lblVorname);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "addUser";
             Text = "User Erstellen";
             ResumeLayout(false);
@@ -138,6 +176,9 @@
         private Label lblJobtitel;
         private TextBox txtJobtitel;
         private Label lblAbteilung;
-        private TextBox txtAbteilung;
+        private Label lblStraße;
+        private ComboBox cboStraße;
+        private ComboBox cboAbteilung;
+        private Button btnOK;
     }
 }

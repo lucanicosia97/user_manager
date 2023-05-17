@@ -26,7 +26,7 @@ namespace user_manager
 
         private void mainBoard_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

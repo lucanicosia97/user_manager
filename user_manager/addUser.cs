@@ -1,5 +1,11 @@
 using System.Xml.Serialization;
 using System.Diagnostics;
+using System;
+using System.
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
+using PowerShell = System.Management.Automation.PowerShell;
+
 
 namespace user_manager
 {
@@ -10,61 +16,42 @@ namespace user_manager
             InitializeComponent();
         }
 
-        private void txtVorname_TextChanged(object sender, EventArgs e)
-        {
+        /* Allgemeine Infos an IT:
+                Telefon- oder Handynummer erstellen
+                
+                spezielle Gruppen hinzufügen
+           
+     
+            UserCredentials: 
+                set Full name: "Vorname Nachname"
+                set Display Name: "Vorname Nachname" 
+                set User Logon Name: "vorname.nachname@simplon.com"
+                set User logon name pre WIN 2000: "vorname.nachname"
+                set Domain: "@simplon.com"
+                set Password: "Initial01"
+                set E-mail: "vorname.nachname@simplon.com"
 
-        }
-        private void txtNachname_TextChanged(object sender, EventArgs e)
-        {
+            JobTitel:
+                set JobTitel
+                set Description
 
-        }
-        /*
-           set Display Name: "Vorname Nachname" 
-           set User Logon Name: "vorname.nachname"
-           set User logon name pre WIN 2000: "vorname.nachname"
-           set Domain: "@simplon.com"
-           set Password: "Initial01"
-           set E-mail: "vorname.nachname@simplon.com"
+            Straße/Addresse:
+                set City, State, Zip, Country
+            
+            Abteilung:
+                set Company: SIMPLON Fahrrad GmbH
+                set Abteilung based on Manager
 
+
+            Return:
+                 return "Running"
+                 return "Alles ok"
+                 return Error
+
+           
         */
 
-        private void txtJobtitel_TextChanged(object sender, EventArgs e)
-        {
-            /*    
-                set Job titel
-                set Description
-            */
-        }
-
-
-        private void cboStraße_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cboAbteilung_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            /*   
-               set Company: SIMPLON Fahrrad GmbH
-               set Department based on Manager
-               
-           */
-        }
-
         private void btnOK_Click(object sender, EventArgs e)
-        {
-            UserCredentials();
-            MessageBox.Show( test(5).ToString());
-        }
-
-        private int test(int b) 
-        {
-            int a = 0;
-            a = b + 1;
-            return a;
-        }
-
-        private void UserCredentials() 
         {
 
         }

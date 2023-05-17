@@ -56,7 +56,6 @@
             txtVorname.Name = "txtVorname";
             txtVorname.Size = new Size(159, 23);
             txtVorname.TabIndex = 1;
-            txtVorname.TextChanged += txtVorname_TextChanged;
             // 
             // lblNachname
             // 
@@ -73,7 +72,6 @@
             txtNachname.Name = "txtNachname";
             txtNachname.Size = new Size(159, 23);
             txtNachname.TabIndex = 3;
-            txtNachname.TextChanged += txtNachname_TextChanged;
             // 
             // lblJobtitel
             // 
@@ -90,7 +88,6 @@
             txtJobtitel.Name = "txtJobtitel";
             txtJobtitel.Size = new Size(159, 23);
             txtJobtitel.TabIndex = 5;
-            txtJobtitel.TextChanged += txtJobtitel_TextChanged;
             // 
             // lblAbteilung
             // 
@@ -119,7 +116,6 @@
             cboStraße.Name = "cboStraße";
             cboStraße.Size = new Size(159, 23);
             cboStraße.TabIndex = 9;
-            cboStraße.SelectedIndexChanged += cboStraße_SelectedIndexChanged;
             // 
             // cboAbteilung
             // 
@@ -130,7 +126,6 @@
             cboAbteilung.Name = "cboAbteilung";
             cboAbteilung.Size = new Size(159, 23);
             cboAbteilung.TabIndex = 10;
-            cboAbteilung.SelectedIndexChanged += cboAbteilung_SelectedIndexChanged;
             // 
             // btnOK
             // 
